@@ -1,5 +1,7 @@
 > Openshift 
 ```console
+oc adm policy add-scc-to-user anyuid -z builder  # one time activity 
+oc adm policy add-scc-to-user anyuid -z default  # one time activity 
 oc new-build https://github.com/debianmaster/openshift-usecases.git --name=base-jetty --strategy=docker --context-dir=/angularjs-on-jetty
 oc new-app base-jetty~https://github.com/angular/angular-seed.git --name=jetty-angular
 ```
