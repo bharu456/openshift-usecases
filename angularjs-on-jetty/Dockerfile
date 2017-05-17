@@ -8,8 +8,8 @@ RUN mkdir -p /home/jesse/scratch
 
 # Fixing someone else's shit
 #RUN chown -R 1001:0 /home/jesse/scratch \
-    && chown -R 1001:0 $JETTY_HOME \
-    && chown -R 1001:0 $JETTY_BASE \
-    && chown -R 1001:0 /docker-entrypoint.sh
+    #&& chown -R 1001:0 $JETTY_HOME \
+    #&& chown -R 1001:0 $JETTY_BASE \
+    #&& chown -R 1001:0 /docker-entrypoint.sh
 #USER 1001
 
