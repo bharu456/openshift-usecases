@@ -1,3 +1,8 @@
+> Openshift 
+```console
+oc new-build https://github.com/debianmaster/openshift-usecases.git --name=base-jetty --strategy=docker --context-dir=/angularjs-on-jetty
+oc new-app base-jetty~https://github.com/angular/angular-seed.git --name=jetty-angular
+```
 
 > Pure docker
 ```sh
