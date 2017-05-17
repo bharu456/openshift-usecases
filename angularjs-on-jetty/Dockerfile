@@ -1,6 +1,7 @@
 FROM jetty
 MAINTAINER 9chakri@gmail.com
 EXPOSE 8080
+RUN apt-get update -y && apt-get insall git -y
 COPY .s2i/bin /usr/local/s2i
 LABEL io.openshift.s2i.scripts-url=image:///usr/local/s2i
 ADD config/scratch.xml /var/lib/jetty/webapps/
