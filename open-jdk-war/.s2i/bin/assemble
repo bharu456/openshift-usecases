@@ -1,0 +1,1 @@
+wget $JAVA_JAR_URL $ARTIFACT_DIR
