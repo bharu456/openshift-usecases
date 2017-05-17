@@ -1,1 +1,1 @@
-cp -R /tmp/src/ /home/jesse/scratch
+cp -R /tmp/src/app/* /home/jesse/scratch/
